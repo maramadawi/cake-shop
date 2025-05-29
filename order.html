@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Shop - Order</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header> 
+        <div class="header-box">
+     <img src="image/cake photo.jpg" alt="Cake Shop" />
+    <h1> Place Your Order</h1>
+   </div>
+
+  <nav>
+    <a href="home.html">Home</a>
+     <a href="product.html">Products</a>
+   <a href="#order">Order</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+<form class="order-form" id="order">
+    <h2>Order Form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="product">Select Product:</label>
+    <select id="product" name="product">
+        <option value="chocolate">Chocolate Cake <p> (15 JD)</p></option>
+        <option value="strawberry">Strawberry Delight <p> (20 JD)</p></option>
+        <option value="cupcakes">Colorful Cupcakes <P> (5 JD)</P></option>
+        <option value="cheesecake">Classic Cheesecake <p> (18 JD)</p></option>
+        <option value="redvelvet">Red Velvet Cake <P> ( 22 JD)</P></option>
+        <option value="vanilla">Vanilla Dream <p> (12 JD)</p></option>
+        <option value="fruitcake">Fruit Cake <p> (25 JD)</p></option>
+        <option value="waffles">Waffles Nutella<P> (8 JD)</P></option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required />
+      <label for="date">Delivery Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions?"></textarea>
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment">
+        <option value="credit">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cash">Cash on Delivery</option>
+</select>
+    <button type="submit">Submit Order</button>
+    </form>
+
+  <div class="custom-footer" id="about">
+   <div class="footer-section">
+    <h3 >  📍Location :</h3>
+    <p>  <a href="https://www.google.com/maps?q=Amman+Downtown" target="_blank" style="color:aliceblue; text-decoration: none;">Amman - Downtown 📍</a></p>
+    <p> <a href="https://www.google.com/maps?q=Amman+Marka" target="_blank" style="color:aliceblue; text-decoration: none;"> Amman - Marka 📍</a></p>
+  </div>
+
+  <div class="footer-section">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="product.html">Our Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Contact Us</h4>
+    Phone: <a href="tel:+1234567890" style="color:aliceblue">0786708392</a>
+    <p>Email: <a href="mailto: maramadawi700@gmail.com" style="color:aliceblue"> maramadawi700@gmail.com </a></p>
+  </div>
+
+  <div class="footer-section">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><img src="image/facebook.png" alt="Facebook" /></a>
+      <a href="https://www.instagram.com"><img src="image/instagram.jpg" alt="Instagram" /></a>
+      <a href="https://www.twitter.com"><img src="image/twitter.png" alt="Twitter" /></a>
+      <a href="https://www.youtube.com"><img src="image/youtube.png" alt="YouTube" /></a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-bottom">
+  <p>&copy; 2025 Cake Shop. All rights reserved.</p>
+</footer>
+</body>
+</html>
