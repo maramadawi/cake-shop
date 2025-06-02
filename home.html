@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cake Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
 
   <nav>
     <a href="#Home">Home</a>
-     <a href="product.html">Products</a>
-   <a href="order.html">Order</a>
+     <a href="product.html" id= "a" onclick="document.getElementById('a').style.color='black'"> Products</a>
+   <a href="order.html" id= "b" onclick="document.getElementById('b').style.color='black'">Order</a>
     <a href="#about">About</a>
   </nav>
 </header>
@@ -65,7 +66,7 @@
   <div class="footer-section">
     <h4>Quick Links</h4>
     <ul>
-      <li><a href="#Home" class="active">Home</a></li>
+      <li><a  id= "a" href="#Home" class="active" onclick="document.getElementById('a').style.color='white' ">Home</a></li>
       <li><a href="#products">Our Products</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>

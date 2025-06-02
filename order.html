@@ -14,25 +14,26 @@
    </div>
 
   <nav>
-    <a href="home.html">Home</a>
-     <a href="product.html">Products</a>
+    <a href="home.html" id= "c" onclick="document.getElementById('c').style.color='black'">Home</a>
+     <a href="product.html" id= "a" onclick="document.getElementById('a').style.color='black'">Products</a>
    <a href="#order">Order</a>
     <a href="#about">About</a>
   </nav>
 </header>
-<form class="order-form" id="order">
+<form class="order-form" id="order"> 
     <h2>Order Form</h2>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+
 
     <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" required />
+    <input type="tel" id="phone" name="phone"  placeholder="Enter your phone " required />
+    <label for="location" >Location:</label>
+    <input type="text" id="location" name="location" placeholder="Enter your location" required />
 
     <label for="product">Select Product:</label>
-    <select id="product" name="product">
+    <select id="product" name="product" required>
         <option value="chocolate">Chocolate Cake <p> (15 JD)</p></option>
         <option value="strawberry">Strawberry Delight <p> (20 JD)</p></option>
         <option value="cupcakes">Colorful Cupcakes <P> (5 JD)</P></option>
@@ -56,9 +57,10 @@
         <option value="paypal">PayPal</option>
         <option value="cash">Cash on Delivery</option>
 </select>
-    <button type="submit">Submit Order</button>
+    <button type="submit" onclick="alert('Are you sure?')">Submit Order</button>
+    
     </form>
-
+    
   <div class="custom-footer" id="about">
    <div class="footer-section">
     <h3 >  📍Location :</h3>
